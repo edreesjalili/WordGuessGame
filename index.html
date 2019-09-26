@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Word Guess Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="row" id="welcome">
+      <div class="col">
+        <h1>Press any key to get started!</h1>
+      </div>
+    </div>
+
+    <div class="row d-none" id="play-again">
+      <div class="col-10">
+        <h1 class="text-danger" id="done-text"></h1>
+        <h1>Do you want to play again?</h1>
+      </div>
+      <div class="col">
+        <button class="btn btn-success" id="play-again">Yes</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-danger" id="cancel">No</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <ul class="list-group text-dark">
+          <li class="list-group-item">Word: <span id="word-box"></span></li>
+          <li class="list-group-item">Guesses Remaining: <span id="remain-box"></span></li>
+          <li class="list-group-item">Letters Guesses: <span id="guesses-box"></span></li>
+          <li class="list-group-item">Wins: <span id="wins-box"></span></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
